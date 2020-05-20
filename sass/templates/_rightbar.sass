@@ -1,0 +1,62 @@
+.rightbar
+  padding: 30px 25px
+  flex-basis: 63%
+  background-color: #fff
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5)
+  &__wrap
+    padding: 25px 30px
+    border: 1px solid rgba(168, 168, 168, 0.44)
+    min-height: 100%
+
+.logo
+  display: flex
+  justify-content: center
+  &__img
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    border: 1px solid #39383a
+    display: flex
+    align-items: center
+    justify-content: center
+  &__lines
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-left: 17px
+    margin-right: 17px
+    &-left
+      .logo-line
+        &:nth-last-child(2)
+          margin-right: 20px
+          width: 55px
+    &-right
+      .logo-line
+        &:nth-last-child(2)
+          margin-left: 20px
+          width: 55px
+
+  &-line
+    width: 43px
+    height: 2px
+    background-color: #39383a
+    margin-top: 10px
+    margin-bottom: 10px
+.about
+  margin-top: 50px
+  text-align: center
+  border-bottom: 1px solid #39383a
+  padding-bottom: 30px
+  &__name
+    color: #39383a
+    font-size: 16px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 18.75px
+  &__position
+    color: #808080
+    font-size: 9px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 1.72px
