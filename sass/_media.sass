@@ -13,11 +13,8 @@
     margin-left: 0
   .logo
     &__img 
-      width: 100px
+      width: 80px
       height: 80px
-  .technologies
-    &__info 
-      justify-content: center
 @media  screen and (min-width : 480px) and (max-width : 767px)
   .container
     flex-direction: column
@@ -28,7 +25,56 @@
       background-position: center center
   .rightbar
     margin-left: 0
-
+  .request
+    &__form
+      margin-top: 20px
+  .about
+    &__name
+      line-height: 30px
+  .logo
+    &__img 
+      width: 80px
+      height: 80px
+@media  screen and (min-width : 320px) and (max-width : 479px)
+  .container
+    flex-direction: column
+  .leftbar
+    margin-bottom: 20px
+    &__info
+      padding: 20px
+    &__photo
+      height: 400px
+      background-position: center center
+  .rightbar
+    margin-left: 0
+    &__wrap 
+      padding: 10px 10px
+  .request
+    &__form
+      margin-top: 20px
+    &__policy
+      font-size: 12px
+  .about
+    &__name
+      line-height: 30px
+      font-size: 16px
+      letter-spacing: 4px
+  .style-name
+    font-size: 16px
+  .style-text
+    font-size: 14px
+  .logo
+    &__lines
+      margin-left: 0
+      margin-right: 0
+    &-line
+      margin-top: 5px
+      margin-bottom: 5px
+    &__img 
+      width: 80px
+      height: 70px
+  .btn
+    font-size: 12px
 @media only screen and (max-width : 991px) 
   .animated 
     -o-transition-property: none !important

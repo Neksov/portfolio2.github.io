@@ -647,7 +647,17 @@ input.invalid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .technologies__info-img {
       cursor: pointer;
       width: 100px;
@@ -801,12 +811,8 @@ input.invalid {
   .rightbar {
     margin-left: 0; }
   .logo__img {
-    width: 100px;
-    height: 80px; }
-  .technologies__info {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+    width: 80px;
+    height: 80px; } }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
@@ -820,7 +826,55 @@ input.invalid {
       height: 400px;
       background-position: center center; }
   .rightbar {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .request__form {
+    margin-top: 20px; }
+  .about__name {
+    line-height: 30px; }
+  .logo__img {
+    width: 80px;
+    height: 80px; } }
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .leftbar {
+    margin-bottom: 20px; }
+    .leftbar__info {
+      padding: 20px; }
+    .leftbar__photo {
+      height: 400px;
+      background-position: center center; }
+  .rightbar {
+    margin-left: 0; }
+    .rightbar__wrap {
+      padding: 10px 10px; }
+  .request__form {
+    margin-top: 20px; }
+  .request__policy {
+    font-size: 12px; }
+  .about__name {
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 4px; }
+  .style-name {
+    font-size: 16px; }
+  .style-text {
+    font-size: 14px; }
+  .logo__lines {
+    margin-left: 0;
+    margin-right: 0; }
+  .logo-line {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .logo__img {
+    width: 80px;
+    height: 70px; }
+  .btn {
+    font-size: 12px; } }
 
 @media only screen and (max-width: 991px) {
   .animated {
