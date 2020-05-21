@@ -1,297 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" media="all" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/swiper.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animate.min.css" media="all" />
+    <title>Портфолио</title>
+  </head>
 
-  <title>Портфолио</title>
-</head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script>
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-<body>
-  <!-- Yandex.Metrika counter -->
-  <script>
-    (function (m, e, t, r, i, k, a) {
-      m[i] =
-        m[i] ||
-        function () {
-          (m[i].a = m[i].a || []).push(arguments);
-        };
-      m[i].l = 1 * new Date();
-      (k = e.createElement(t)),
-      (a = e.getElementsByTagName(t)[0]),
-      (k.async = 1),
-      (k.src = r),
-      a.parentNode.insertBefore(k, a);
-    })(
-      window,
-      document,
-      "script",
-      "https://mc.yandex.ru/metrika/tag.js",
-      "ym"
-    );
-
-    ym(62680024, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true,
-    });
-  </script>
-  <noscript>
-    <div>
-      <img src="https://mc.yandex.ru/watch/62680024" style="position: absolute; left: -9999px;" alt="" /></div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
-  <main>
-    <section class="potfolio">
-      <div class="container">
-        <section class="leftbar wow fadeInLeft" data-wow-delay="1s">
-          <div class="leftbar__photo"></div>
-          <div class="leftbar__info">
-            <h2 class="leftbar__heading leftbar__heading-light">
-              Профиль
-            </h2>
-            <p class="leftbar__text">
-              Привет, меня зовут Вадим. Я начинающий Веб-разработчик. Основная
-              специализация: Верстка сайтов, интернет-магазинов и Landing Page
-              (фиксированная, резиновая, адаптивная). Работаю удаленно.
-              Целеустремленный, ответственный и исполнительный. Имея
-              аналитический склад ума и логическое мышление - в процессе
-              верстки продумываю каждую деталь и подготавливаю удобный, в
-              нужных местах прокомментированный, код для программистов.
-            </p>
-            <div class="contacts">
-              <div class="contacts__item wow fadeInLeft" data-wow-delay="2s">
-                <h3 class="contacts__title">
-                  <img src="img/phone-alt-solid.svg" alt="phone" class="contacts__img" />
-                  Телефон
-                </h3>
-                <div class="contacts__text">
-                  <a href="tel:+7(911)-983-31-12">+7(911)-983-31-12</a>
-                </div>
-              </div>
-              <div class="contacts__item wow fadeInLeft" data-wow-delay="3s">
-                <h3 class="contacts__title">
-                  <img src="img/envelope-solid.svg" alt="phone" class="contacts__img" />
-                  Е-mail
-                </h3>
-                <div class="contacts__text">
-                  <a href="mailto:n2v@list.ru">n2v@list.ru</a>
-                </div>
-              </div>
-              <div class="contacts__item wow fadeInLeft" data-wow-delay="4s">
-                <h3 class="contacts__title">
-                  <img src="img/globe-solid.svg" alt="phone" class="contacts__img" />
-                  Веб сайт
-                </h3>
-                <div class="contacts__text">
-                  <a href="http://www.nekrasovvadim.ru/portfolio/" target="_blank">www.portfolio.ru</a>
-                </div>
-              </div>
-              <div class="contacts__item wow fadeInLeft" data-wow-delay="5s">
-                <h3 class="contacts__title">
-                  <img src="img/map-marked-alt-solid.svg" alt="phone" class="contacts__img" />
-                  Адрес
-                </h3>
-                <div class="contacts__text">
-                  Россия, г.Санкт-Петербург, ул.Белышева
-                </div>
-              </div>
-              <div class="contacts__item wow fadeInLeft" data-wow-delay="6s">
-                <h3 class="contacts__title">
-                  <img src="img/instagram-square-brands.svg" alt="phone" class="contacts__img" />
-                  Instagram
-                </h3>
-                <div class="contacts__text">
-                  <a href="https://www.instagram.com/n2vadim" target="_blank">n2vadim</a> </div>
-              </div>
-              <div class="contacts__item wow fadeInLeft" data-wow-delay="7s">
-                <h3 class="contacts__title">
-                  <img src="img/vk-brands.svg" alt="phone" class="contacts__img" />
-                  Вконтакте
-                </h3>
-                <div class="contacts__text">
-                  <a href="https://vk.com/id7833256" target="_blank">Некрасов Вадим</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="rightbar wow fadeInRight" data-wow-delay="1s">
-          <div class="rightbar__wrap">
-            <div class="logo">
-              <div class="logo__lines logo__lines-left">
-                <span class="logo-line wow fadeInLeft" data-wow-delay="3s"></span>
-                <span class="logo-line wow fadeInLeft" data-wow-delay="4s"></span>
-                <span class="logo-line wow fadeInLeft" data-wow-delay="5s"></span>
-              </div>
-              <div class="logo__img wow fadeInDown" data-wow-delay="2s">
-                Н/В
-              </div>
-              <div class="logo__lines logo__lines-right">
-                <span class="logo-line wow fadeInRight" data-wow-delay="3s"></span>
-                <span class="logo-line wow fadeInRight" data-wow-delay="4s"></span>
-                <span class="logo-line wow fadeInRight" data-wow-delay="5s"></span>
-              </div>
-            </div>
-            <div class="about wow jackInTheBox" data-wow-delay="3s">
-              <h3 class="about__name">Некрасов Вадим</h3>
-              <span class="about__position">Web Developer</span>
-            </div>
-            <div class="work">
-              <h3 class="work__name style-name">Мои работы</h3>
-              <span class="work__text style-text">
-                В данном разделе представлены мои работы 
-              </span>
-              <!-- Swiper -->
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/animal/" target="_blank"><img src="img/animal.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/ACADEMIA/" target="_blank"><img src="img/RDP.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/Lemon/" target="_blank"><img src="img/lemon.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/Lumos22/" target="_blank"><img src="img/lumos22.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/food/" target="_blank"><img src="img/food.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/mask/" target="_blank"><img src="img/masck.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/thepetsour/" target="_blank"><img src="img/thepetsour.jpg"
-                        alt="site" class="swiper-slide__img"
-                        onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/saytspb/" target="_blank"><img src="img/saytspb.jpg" alt="site"
-                        class="swiper-slide__img" onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="http://www.nekrasovvadim.ru/restaurant/" target="_blank"><img src="img/restaurant.jpg"
-                        alt="site" class="swiper-slide__img"
-                        onclick="ym('62680024', 'reachGoal', 'button'); return true;"></a>
-                  </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="technologies">
-              <h3 class="technologies__name style-name">
-                Технологии, которыми я владею
-              </h3>
-              <span class="technologies__text style-text">
-                Ниже приведен список основных технологий, которые я использую в своей работе.
-              </span>
-              <div class="technologies__info">
-                <img src="img/AP.png" alt="Adobe Photoshop" class="technologies__info-img wow zoomIn"
-                  data-wow-delay="1s">
-                <img src="img/bootstrap.png" alt="Bootstrap" class="technologies__info-img wow zoomIn"
-                  data-wow-delay="2s">
-                <img src="img/git.png" alt="Git" class="technologies__info-img wow zoomIn" data-wow-delay="3s">
-                <img src="img/gulp.png" alt="Gulp" class="technologies__info-img wow zoomIn" data-wow-delay="4s">
-                <img src="img/html.png" alt="Html" class="technologies__info-img wow zoomIn" data-wow-delay="5s">
-                <img src="img/jquery.png" alt="jquery" class="technologies__info-img wow zoomIn" data-wow-delay="6s">
-                <img src="img/js.png" alt="Java Script" class="technologies__info-img wow zoomIn" data-wow-delay="7s">
-                <img src="img/sass.png" alt="Sass" class="technologies__info-img wow zoomIn" data-wow-delay="8s">
-                <img src="img/vs.png" alt="Visual Studio Code" class="technologies__info-img wow zoomIn"
-                  data-wow-delay="9s">
-                <img src="img/figma.png" alt="Figma" class="technologies__info-img wow zoomIn" data-wow-delay="10s">
-                <img src="img/avocode.png" alt="Avacode" class="technologies__info-img wow zoomIn" data-wow-delay="11s">
-              </div>
-            </div>
-            <div class="request">
-              <h3 class="request__name style-name">
-                Заявка
-              </h3>
-              <span class="request__title style-text">
-                Здесь вы можете оставить свои данные, после чего я с Вами свяжусь.
-              </span>
-              <form action="request.php" method="POST" class="form request__form">
-                <div class="input-group request__input-group">
-                  <label for="request-user-name" class="label request__label label--light ">Имя</label>
-                  <!-- /.label form__label -->
-                  <input type="text" name="userName" class="input request__input request__input input--light"
-                    id="request-user-name" placeholder="Как вас зовут:" maxlength="30" />
-                </div>
-                <div class="input-group request__input-group">
-                  <label for="request-user-phone" class="label request__label label--light ">Телефон</label>
-                  <!-- /.label form__label -->
-                  <input type="tel" name="userPhone" class="input request__input request__input input--light"
-                    id="request-user-phone" placeholder="Ваш номер телефона:" maxlength="30" />
-                </div>
-                <div class="input-group request__input-group">
-                  <label for="request-user-email" class="label request__label label--light ">Email</label>
-                  <!-- /.label form__label -->
-                  <input type="email" name="userEmail" class="input request__input request__input input--light"
-                    id="request-user-email" placeholder="Ваш email:" maxlength="30" />
-                </div>
-                <div class="input-group request__input-group">
-                  <div class="policy request__policy">
-                    <input type="checkbox" name="checkBoxRequest" id="request-policy-checkbox" class="policy__checkbox"
-                      checked />
-                    <label for="request-policy-checkbox" class="policy__label request__policy-label">я соглашаюсь с
-                      обработкой
-                      данных</label>
-                  </div>
-                </div>
-                <!-- /.policy -->
-                <button class="btn btn--primary request__btn wow pulse
-                " data-wow-delay="1s" data-wow-iteration="40">
-                  Отправить заявку
-                </button>
-                <!-- /.button button-rimary modal__button -->
-              </form>
-            </div>
-          </div>
-        </section>
+      ym(62680024, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/62680024"
+          style="position: absolute; left: -9999px;"
+          alt=""
+        />
       </div>
-    </section>
-  </main>
-  <div class="modalSend">
-    <div class="modalSend__dialog">
-      <button class="modalSend__close"></button>
-      <div class="modalSend__content">
-        <h3 class="modalSend__header">
-          Спасибо за заявку.<br>Я перезвоню Вам в течение 15
-          минут. <br />
-        </h3>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <main>
+      <section class="potfolio">
+        <div class="container">
+          <section class="leftbar wow fadeInLeft" data-wow-delay="1s">
+            <div class="leftbar__photo"></div>
+            <div class="leftbar__info">
+              <h2 class="leftbar__heading leftbar__heading-light">
+                Профиль
+              </h2>
+              <p class="leftbar__text">
+                Привет, меня зовут Вадим. Я начинающий Веб-разработчик. Основная
+                специализация: Верстка сайтов, интернет-магазинов и Landing Page
+                (фиксированная, резиновая, адаптивная). Работаю удаленно.
+                Целеустремленный, ответственный и исполнительный. Имея
+                аналитический склад ума и логическое мышление - в процессе
+                верстки продумываю каждую деталь и подготавливаю удобный, в
+                нужных местах прокомментированный, код для программистов.
+              </p>
+              <div class="contacts">
+                <div
+                  class="contacts__item wow fadeInLeft"
+                  data-wow-delay="2.1s"
+                >
+                  <h3 class="contacts__title">
+                    <img
+                      src="img/phone-alt-solid.svg"
+                      alt="phone"
+                      class="contacts__img"
+                    />
+                    Телефон
+                  </h3>
+                  <div class="contacts__text">
+                    <a href="tel:+7(911)-983-31-12">+7(911)-983-31-12</a>
+                  </div>
+                </div>
+                <div
+                  class="contacts__item wow fadeInLeft"
+                  data-wow-delay="2.2s"
+                >
+                  <h3 class="contacts__title">
+                    <img
+                      src="img/envelope-solid.svg"
+                      alt="phone"
+                      class="contacts__img"
+                    />
+                    Е-mail
+                  </h3>
+                  <div class="contacts__text">
+                    <a href="mailto:n2v@list.ru">n2v@list.ru</a>
+                  </div>
+                </div>
+                <div
+                  class="contacts__item wow fadeInLeft"
+                  data-wow-delay="2.3s"
+                >
+                  <h3 class="contacts__title">
+                    <img
+                      src="img/globe-solid.svg"
+                      alt="phone"
+                      class="contacts__img"
+                    />
+                    Веб сайт
+                  </h3>
+                  <div class="contacts__text">
+                    <a
+                      href="http://www.nekrasovvadim.ru/portfolio/"
+                      target="_blank"
+                      >www.portfolio.ru</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="contacts__item wow fadeInLeft"
+                  data-wow-delay="2.4s"
+                >
+                  <h3 class="contacts__title">
+                    <img
+                      src="img/map-marked-alt-solid.svg"
+                      alt="phone"
+                      class="contacts__img"
+                    />
+                    Адрес
+                  </h3>
+                  <div class="contacts__text">
+                    Россия, г.Санкт-Петербург, ул.Белышева
+                  </div>
+                </div>
+                <div
+                  class="contacts__item wow fadeInLeft"
+                  data-wow-delay="2.5s"
+                >
+                  <h3 class="contacts__title">
+                    <img
+                      src="img/instagram-square-brands.svg"
+                      alt="phone"
+                      class="contacts__img"
+                    />
+                    Instagram
+                  </h3>
+                  <div class="contacts__text">
+                    <a href="https://www.instagram.com/n2vadim" target="_blank"
+                      >n2vadim</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="contacts__item wow fadeInLeft"
+                  data-wow-delay="2.6s"
+                >
+                  <h3 class="contacts__title">
+                    <img
+                      src="img/vk-brands.svg"
+                      alt="phone"
+                      class="contacts__img"
+                    />
+                    Вконтакте
+                  </h3>
+                  <div class="contacts__text">
+                    <a href="https://vk.com/id7833256" target="_blank"
+                      >Некрасов Вадим</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="rightbar wow fadeInRight" data-wow-delay="1s">
+            <div class="rightbar__wrap">
+              <div class="logo">
+                <div class="logo__lines logo__lines-left">
+                  <span
+                    class="logo-line wow fadeInLeft"
+                    data-wow-delay="2.2s"
+                  ></span>
+                  <span
+                    class="logo-line wow fadeInLeft"
+                    data-wow-delay="2.4s"
+                  ></span>
+                  <span
+                    class="logo-line wow fadeInLeft"
+                    data-wow-delay="2.6s"
+                  ></span>
+                </div>
+                <div class="logo__img wow fadeInDown" data-wow-delay="2s">
+                  Н/В
+                </div>
+                <div class="logo__lines logo__lines-right">
+                  <span
+                    class="logo-line wow fadeInRight"
+                    data-wow-delay="2.2s"
+                  ></span>
+                  <span
+                    class="logo-line wow fadeInRight"
+                    data-wow-delay="2.4s"
+                  ></span>
+                  <span
+                    class="logo-line wow fadeInRight"
+                    data-wow-delay="2.6s"
+                  ></span>
+                </div>
+              </div>
+              <div class="about wow jackInTheBox" data-wow-delay="3s">
+                <h3 class="about__name">Некрасов Вадим</h3>
+                <span class="about__position">Web Developer</span>
+              </div>
+              <div class="work">
+                <h3 class="work__name style-name">Мои работы</h3>
+                <span class="work__text style-text">
+                  В данном разделе представлены мои работы
+                </span>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/animal/"
+                        target="_blank"
+                        ><img
+                          src="img/animal.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/ACADEMIA/"
+                        target="_blank"
+                        ><img
+                          src="img/RDP.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/Lemon/"
+                        target="_blank"
+                        ><img
+                          src="img/lemon.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/Lumos22/"
+                        target="_blank"
+                        ><img
+                          src="img/lumos22.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/food/"
+                        target="_blank"
+                        ><img
+                          src="img/food.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/mask/"
+                        target="_blank"
+                        ><img
+                          src="img/masck.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/thepetsour/"
+                        target="_blank"
+                        ><img
+                          src="img/thepetsour.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/saytspb/"
+                        target="_blank"
+                        ><img
+                          src="img/saytspb.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a
+                        href="http://www.nekrasovvadim.ru/restaurant/"
+                        target="_blank"
+                        ><img
+                          src="img/restaurant.jpg"
+                          alt="site"
+                          class="swiper-slide__img"
+                          onclick="ym('62680024', 'reachGoal', 'button'); return true;"
+                      /></a>
+                    </div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <div class="technologies">
+                <h3 class="technologies__name style-name">
+                  Технологии, которыми я владею
+                </h3>
+                <span class="technologies__text style-text">
+                  Ниже приведен список основных технологий, которые я использую
+                  в своей работе.
+                </span>
+                <div class="technologies__info">
+                  <img
+                    src="img/AP.png"
+                    alt="Adobe Photoshop"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1s"
+                  />
+                  <img
+                    src="img/bootstrap.png"
+                    alt="Bootstrap"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.2s"
+                  />
+                  <img
+                    src="img/git.png"
+                    alt="Git"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.3s"
+                  />
+                  <img
+                    src="img/gulp.png"
+                    alt="Gulp"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.4s"
+                  />
+                  <img
+                    src="img/html.png"
+                    alt="Html"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.5s"
+                  />
+                  <img
+                    src="img/jquery.png"
+                    alt="jquery"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.6s"
+                  />
+                  <img
+                    src="img/js.png"
+                    alt="Java Script"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.7s"
+                  />
+                  <img
+                    src="img/sass.png"
+                    alt="Sass"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.8s"
+                  />
+                  <img
+                    src="img/vs.png"
+                    alt="Visual Studio Code"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="1.9s"
+                  />
+                  <img
+                    src="img/figma.png"
+                    alt="Figma"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="2s"
+                  />
+                  <img
+                    src="img/avocode.png"
+                    alt="Avacode"
+                    class="technologies__info-img wow zoomIn"
+                    data-wow-delay="2.1s"
+                  />
+                </div>
+              </div>
+              <div class="request">
+                <h3 class="request__name style-name">
+                  Заявка
+                </h3>
+                <span class="request__title style-text">
+                  Здесь вы можете оставить свои данные, после чего я с Вами
+                  свяжусь.
+                </span>
+                <form
+                  action="request.php"
+                  method="POST"
+                  class="form request__form"
+                >
+                  <div class="input-group request__input-group">
+                    <label
+                      for="request-user-name"
+                      class="label request__label label--light"
+                      >Имя</label
+                    >
+                    <!-- /.label form__label -->
+                    <input
+                      type="text"
+                      name="userName"
+                      class="input request__input request__input input--light"
+                      id="request-user-name"
+                      placeholder="Как вас зовут:"
+                      maxlength="30"
+                    />
+                  </div>
+                  <div class="input-group request__input-group">
+                    <label
+                      for="request-user-phone"
+                      class="label request__label label--light"
+                      >Телефон</label
+                    >
+                    <!-- /.label form__label -->
+                    <input
+                      type="tel"
+                      name="userPhone"
+                      class="input request__input request__input input--light"
+                      id="request-user-phone"
+                      placeholder="Ваш номер телефона:"
+                      maxlength="30"
+                    />
+                  </div>
+                  <div class="input-group request__input-group">
+                    <label
+                      for="request-user-email"
+                      class="label request__label label--light"
+                      >Email</label
+                    >
+                    <!-- /.label form__label -->
+                    <input
+                      type="email"
+                      name="userEmail"
+                      class="input request__input request__input input--light"
+                      id="request-user-email"
+                      placeholder="Ваш email:"
+                      maxlength="30"
+                    />
+                  </div>
+                  <div class="input-group request__input-group">
+                    <div class="policy request__policy">
+                      <input
+                        type="checkbox"
+                        name="checkBoxRequest"
+                        id="request-policy-checkbox"
+                        class="policy__checkbox"
+                        checked
+                      />
+                      <label
+                        for="request-policy-checkbox"
+                        class="policy__label request__policy-label"
+                        >я соглашаюсь с обработкой данных</label
+                      >
+                    </div>
+                  </div>
+                  <!-- /.policy -->
+                  <button
+                    class="btn btn--primary request__btn wow pulse"
+                    data-wow-delay="1s"
+                    data-wow-iteration="40"
+                  >
+                    Отправить заявку
+                  </button>
+                  <!-- /.button button-rimary modal__button -->
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <div class="modalSend">
+      <div class="modalSend__dialog">
+        <button class="modalSend__close"></button>
+        <div class="modalSend__content">
+          <h3 class="modalSend__header">
+            Спасибо за заявку.<br />Я перезвоню Вам в течение 15 минут. <br />
+          </h3>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="buttonUp">
-    <span id="button-up">
-      <img src="img/angle-up-solid.svg" alt="Наверх" />
-    </span>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/buttonUp.min.js"></script>
-</body>
-
+    <div class="buttonUp">
+      <span id="button-up">
+        <img src="img/angle-up-solid.svg" alt="Наверх" />
+      </span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/buttonUp.min.js"></script>
+  </body>
 </html>

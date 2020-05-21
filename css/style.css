@@ -464,11 +464,7 @@ input.invalid {
       color: #ff5a3c; }
   .contacts__item {
     border-bottom: 2px #5a5a5a dashed;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; }
-    .contacts__item:hover {
-      border-bottom: 2px #ff5a3c dashed; }
+    padding-bottom: 20px; }
 
 .social {
   display: block;
