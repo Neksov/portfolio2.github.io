@@ -3,6 +3,7 @@
   flex-basis: 63%
   background-color: #fff
   box-shadow: 1px 1px 10px rgba(0,0,0,0.5)
+  margin-left: 20px
   &__wrap
     padding: 25px 30px
     border: 1px solid rgba(168, 168, 168, 0.44)
@@ -50,13 +51,100 @@
   padding-bottom: 30px
   &__name
     color: #39383a
-    font-size: 16px
+    font-size: 20px
     font-weight: 500
     text-transform: uppercase
     letter-spacing: 18.75px
   &__position
     color: #808080
-    font-size: 9px
+    font-size: 12px
     font-weight: 400
     text-transform: uppercase
     letter-spacing: 1.72px
+.work
+  text-align: center
+  margin-top: 30px
+  border-bottom: 1px solid #39383a
+  padding-bottom: 30px
+.style-name
+  color: #39383a
+  font-size: 20px
+  font-weight: bold
+  text-transform: uppercase
+.style-text
+  color: #808080
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 1.72px
+  margin-top: 20px
+  line-height: 20px
+.swiper-container
+  max-width: 500px
+  padding-top: 30px
+  padding-bottom: 50px
+.swiper-slide 
+  background-position: center
+  background-size: cover
+  width: 300px
+  height: 200px
+  cursor: pointer
+  &__img
+    background-position: center
+    background-size: cover
+    width: 300px
+    height: 200px
+    transition: all 0.4s ease-in-out
+    &:hover
+      transform: scale(1.2)
+.swiper-pagination-bullet
+  background-color: #555555
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet 
+  margin: 0 6px
+.technologies
+  text-align: center
+  margin-top: 30px
+  border-bottom: 1px solid #39383a
+  &__info
+    margin-top: 20px
+    display: flex
+    flex-wrap: wrap
+    &-img
+      cursor: pointer
+      width: 100px
+      padding: 10px
+      transition: all 0.4s ease-in-out
+      &:hover
+        transform: scale(1.2)
+.request
+  text-align: center
+  margin-top: 30px
+  border-bottom: 1px solid #39383a
+  &__form
+    display: flex
+    flex-direction: column
+  &__label
+    text-align: left
+    margin-bottom: 10px
+    font-weight: bold
+  &__input
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 15px
+    &::placeholder
+      color: #808080
+    &:last-of-type 
+      margin-bottom: 1rem
+  &__policy
+    text-align: left
+  &__btn
+    align-self: center
+    padding: 15px 40px
+    margin-top: 10px
+    margin-bottom: 10px
+    transition: all 0.4s ease-in-out
+    &:hover
+      background-color: #39383a
+  #checkBoxRequest-error
+    margin-top: 20px  

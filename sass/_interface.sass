@@ -9,13 +9,9 @@
   border-radius: 35px
   transition: box-shadow 0.3s
   cursor: pointer
-
   &--primary
     background-color: $primary
     color: $light
-  &--light
-    background: #FAF9F9
-    border: 1px solid #E5E5E5
   &:hover
     box-shadow: none
   &:active, &:focus 
@@ -24,7 +20,8 @@ label
   &.invalid
     position: absolute
     margin-top: 53px
-    color: $black
+    color: $primary    
+
 input
   &.invalid
     border-bottom: 1px solid $primary    

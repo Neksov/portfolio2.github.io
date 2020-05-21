@@ -3,12 +3,17 @@
   background-color: #39383a
   color: #ababab
   box-shadow: 1px 1px 10px rgba(0,0,0,0.5)
-
+  overflow: hidden
   &__photo
     height: 330px
     background: url(../img/me.jpg) no-repeat
     background-position: center center
     background-size: cover
+    transition: all 0.4s ease-in-out
+    cursor: pointer
+    transform: scale(1)
+    &:hover
+      transform: scale(1.1)
   &__info
     padding-left: 31px    
     padding-right: 26px
@@ -29,7 +34,6 @@
     margin-bottom: 50px
 .contacts
   cursor: pointer
-
   &__img
     width: 20px
   &__title
@@ -39,16 +43,54 @@
     display: flex
     align-items: flex-end
     justify-content: left
+    transition: all 0.4s ease-in-out
     img
       margin-right: 10px
+    &:hover
+      color: $primary
   &__text
     padding-left: 30px
+    transition: all 0.4s ease-in-out
     a
       color: #ababab
       font-size: 13px
       font-weight: 300
       letter-spacing: 0.5px
       text-decoration: none
+      transition: all 0.4s ease-in-out
+      &:hover
+        color: $primary
+    &:hover
+      color: $primary
   &__item
     border-bottom: 2px #5a5a5a dashed
     padding-bottom: 20px
+    transition: all 0.4s ease-in-out
+    &:hover
+      border-bottom: 2px $primary dashed
+
+.social
+  display: block
+  margin-top: 20px
+  &__title
+    color: #ffffff
+    font-size: 16px
+    font-weight: 400
+  &__info
+    display: flex
+    align-items: center
+    flex-direction: row
+    &-img
+      width: 30px
+      transition: all 0.4s ease-in-out
+      margin-top: 10px
+      margin-right: 10px
+      &:hover
+        transform: scale(1.2)
+    &-img2
+      width: 36px
+      transition: all 0.4s ease-in-out
+      margin-top: 10px
+      margin-right: 10px
+      &:hover
+        transform: scale(1.2)
