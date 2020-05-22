@@ -1,4 +1,4 @@
-.modalSend
+.consent
   opacity: 0
   visibility: hidden
   position: fixed
@@ -7,24 +7,28 @@
   top: 0
   bottom: 0
   right: 0
-  width: 100% //от родительского блока body 
+  width: 100% //от родительского блока body
   background-color: rgba($black ,0.8 ) //прозрачность 60%
   display: flex
   align-items: center
   justify-content: center
-  overflow: auto
+  color: $black
+  text-align: left
+  line-height: 30px
+  overflow: hidden
+  
   &--visible
     opacity: 1
     visibility: visible
   &__dialog
     position: relative
-    width: 300px
-    height: 150px
+    width: 90%
+    height: 90%
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.15)
     background-color: #ffffff
-    padding-top: 0px
-    padding-left: 31px
-    padding-right: 32px
+    padding: 30px
+    margin: 50px
+    overflow: auto
   &__close
     position: absolute
     right: 0
@@ -37,11 +41,8 @@
     cursor: pointer
     outline: none
   &__header
-    color: $black
     font-size: 20px
     font-weight: 400
-    letter-spacing: -0.5px
-    text-align: center
-    line-height: 30px
-
+  &__list,&__text
+    font-size: 16px
 

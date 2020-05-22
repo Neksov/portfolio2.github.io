@@ -702,7 +702,19 @@ input.invalid {
   .request__input:last-of-type {
     margin-bottom: 1rem; }
   .request__policy {
-    text-align: left; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left; }
+    .request__policy-img {
+      cursor: pointer;
+      margin-left: 10px;
+      width: 20px; }
   .request__btn {
     -ms-flex-item-align: center;
     align-self: center;
@@ -760,6 +772,9 @@ input.invalid {
   -ms-flex-pack: center;
   justify-content: center;
   overflow: auto; }
+  .modalSend--visible {
+    opacity: 1;
+    visibility: visible; }
   .modalSend__dialog {
     position: relative;
     width: 300px;
@@ -788,6 +803,60 @@ input.invalid {
     letter-spacing: -0.5px;
     text-align: center;
     line-height: 30px; }
+
+.consent {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(56, 57, 59, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #38393b;
+  text-align: left;
+  line-height: 30px;
+  overflow: hidden; }
+  .consent--visible {
+    opacity: 1;
+    visibility: visible; }
+  .consent__dialog {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 50px;
+    overflow: auto; }
+  .consent__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url(../img/close.svg) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer;
+    outline: none; }
+  .consent__header {
+    font-size: 20px;
+    font-weight: 400; }
+  .consent__list, .consent__text {
+    font-size: 16px; }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .container {

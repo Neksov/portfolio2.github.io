@@ -1,45 +1,66 @@
 $(document).ready(function () {
-  let modal = $(".request");
-  modalBtn = $("[data-toggle = modal]");
-  closeBtn = $(".request__close");
+  //согласие 
+  let consent = $(".consent");
+  modalСonsent = $("[data-toggle = consent]");
+  closeСonsent = $(".consent__close");
 
-  modalBtn.on("click", function () {
+  //благодарность 
+  let modalSend = $(".modalSend");
+  modalBtnSend = $("[data-toggle = modalSend]");
+  closeBtnSend = $(".modalSend__close");
+
+  //благодарность 
+  modalBtnSend.on("click", function () {
     //присваееваем класс
-    modal.toggleClass("modal--visible");
+    modalSend.toggleClass("modalSend--visible");
   });
 
-  closeBtn.on("click", function () {
+  closeBtnSend.on("click", function () {
     //присваееваем класс
-    modal.toggleClass("modal--visible");
+    modalSend.toggleClass("modalSend--visible");
   });
   //закрытие по esc
   $(document).keyup("click", function (event) {
     if (event.which == "27") {
-      $(".modal").removeClass("modal--visible");
+      $(".modalSend").removeClass("modalSend--visible");
     }
   });
   // закрытие по клику вне окна
   $(document).click(function (e) {
-    if ($(e.target).is(".modal")) {
-      modal.toggleClass("modal--visible");
+    if ($(e.target).is(".modalSend")) {
+      modalSend.toggleClass("modalSend--visible");
     }
   });
 
-  //закрытие модального окна БЛАГОДАРНОСТИ по крестику
-  $(".modalSend__close").on("click", function (event) {
-    event.preventDefault();
-    $(".modalSend").fadeOut();
+
+  //согласие
+  modalСonsent.on("click", function () {
+    //присваееваем класс
+    consent.toggleClass("consent--visible");
   });
-  //закрытие по esc БЛАГОДАРНОСТИ
+
+  //закрытие по esc
   $(document).keyup("click", function (event) {
     if (event.which == "27") {
-      $(".modalSend").fadeOut();
+      $(".consent").removeClass("consent--visible");
     }
   });
-  // закрытие по клику вне окна БЛАГОДАРНОСТИ
-  $(document).on("click", function (e) {
-    $(".modalSend").fadeOut();
+  // закрытие по клику вне окна
+  $(document).click(function (e) {
+    if ($(e.target).is(".consent")) {
+      consent.toggleClass("consent--visible");
+    }
   });
+  closeСonsent.on("click", function () {
+    //присваееваем класс
+    consent.toggleClass("consent--visible");
+  });
+
+
+
+
+
+
 
   //анимация
   new WOW().init();
@@ -105,7 +126,6 @@ $(document).ready(function () {
         url: "request.php",
         data: $(".request__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
         success: function (response) {
-          //modal.on('.modalSend');
           $(form)[0].reset(); // чистит поля после отправки формы
           $(".modalSend").fadeIn();
         }
