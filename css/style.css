@@ -715,6 +715,8 @@ input.invalid {
       cursor: pointer;
       margin-left: 10px;
       width: 20px; }
+    .request__policy-label {
+      padding-left: 10px; }
   .request__btn {
     -ms-flex-item-align: center;
     align-self: center;
