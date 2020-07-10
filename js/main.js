@@ -1,15 +1,15 @@
 $(document).ready(function () {
-  //согласие 
+  //согласие
   let consent = $(".consent");
   modalСonsent = $("[data-toggle = consent]");
   closeСonsent = $(".consent__close");
 
-  //благодарность 
+  //благодарность
   let modalSend = $(".modalSend");
   modalBtnSend = $("[data-toggle = modalSend]");
   closeBtnSend = $(".modalSend__close");
 
-  //благодарность 
+  //благодарность
   modalBtnSend.on("click", function () {
     //присваееваем класс
     modalSend.toggleClass("modalSend--visible");
@@ -31,7 +31,6 @@ $(document).ready(function () {
       modalSend.toggleClass("modalSend--visible");
     }
   });
-
 
   //согласие
   modalСonsent.on("click", function () {
@@ -56,20 +55,14 @@ $(document).ready(function () {
     consent.toggleClass("consent--visible");
   });
 
-
-
-
-
-
-
   //анимация
   new WOW().init();
 
-  var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
+  var swiper = new Swiper(".swiper-container", {
+    effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -78,7 +71,7 @@ $(document).ready(function () {
       slideShadows: true,
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
     },
     autoplay: {
       delay: 8000,
@@ -93,22 +86,22 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 15
+        maxlength: 15,
       },
       userPhone: "required",
       checkBoxRequest: "required",
       // правило- обьект
       userEmail: {
         required: true,
-        email: true
-      }
+        email: true,
+      },
     },
     //сообщения
     messages: {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче 2 символов",
-        maxlength: "Имя не длиньше 15 символов"
+        maxlength: "Имя не длиньше 15 символов",
       },
 
       userPhone: "Телефон обязателен",
@@ -116,8 +109,8 @@ $(document).ready(function () {
 
       userEmail: {
         required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
-      }
+        email: "Введите в формате: name@domain.com",
+      },
     },
     //отправка формы через аякс
     submitHandler: function (form) {
@@ -128,16 +121,15 @@ $(document).ready(function () {
         success: function (response) {
           $(form)[0].reset(); // чистит поля после отправки формы
           $(".modalSend").fadeIn();
-        }
+        },
       });
-    }
+    },
   });
 
   //маска для номера телефона
   $("[type=tel]").mask("+7(000)000-00-00", {
     placeholder: "Ваш номер телефона:",
   });
-
 });
 //плавный якорь
 $(function () {
