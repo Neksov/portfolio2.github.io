@@ -340,6 +340,10 @@ input {
   border: none;
   border-bottom: 1px solid #939497; }
 
+a {
+  text-decoration: none;
+  color: #000000; }
+
 .container {
   width: 85%;
   max-width: 960px;
