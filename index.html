@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,6 +10,15 @@
   <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animate.min.css" media="all" />
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script defer src="js/jquery.fancybox.min.js"></script>
+  <script defer src="js/swiper.min.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/jquery.validate.min.js"></script>
+  <script defer src="js/jquery.mask.min.js"></script>
+  <script defer src="js/wow.min.js"></script>
+  <script defer src="js/buttonUp.min.js"></script>
 
   <title>Портфолио</title>
 </head>
@@ -59,14 +68,14 @@
             <h2 class="leftbar__heading leftbar__heading-light">
               Профиль
             </h2>
-            <p class="leftbar__text">
+            <h2 class="leftbar__text">
               Привет, меня зовут Вадим. Я начинающий Веб-разработчик. Основная
               специализация: Верстка сайтов, интернет-магазинов и Landing Page.
               Целеустремленный, ответственный и исполнительный. Имея
               аналитический склад ума и логическое мышление - в процессе
               верстки продумываю каждую деталь и подготавливаю удобный, в
               нужных местах прокомментированный, код для программистов.
-            </p>
+            </h2>
             <div class="contacts">
               <div class="contacts__item wow fadeInLeft" data-wow-delay="2.1s">
                 <h3 class="contacts__title">
@@ -122,6 +131,15 @@
                   <a href="https://vk.com/id7833256" target="_blank">Некрасов Вадим</a>
                 </div>
               </div>
+              <div class="contacts__item wow fadeInLeft" data-wow-delay="2.8s">
+                <h3 class="contacts__title">
+                  <img src="img/github.svg" alt="phone" class="contacts__img" />
+                  GitHub
+                </h3>
+                <div class="contacts__text">
+                  <a href="https://github.com/Neksov?tab=repositories" target="_blank">GitHub</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -154,6 +172,26 @@
               <!-- Swiper -->
               <div class="swiper-container">
                 <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="https://neksov.github.io/TestSimpleHome.github.io/" target="_blank"><img
+                        src="img/simpleHome.png" alt="site" class="swiper-slide__img"
+                        onclick="ym('62680024', 'reachGoal', 'button'); return true;" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://neksov.github.io/testDfaktor.github.io/" target="_blank"><img
+                        src="img/testDefactor.png" alt="site" class="swiper-slide__img"
+                        onclick="ym('62680024', 'reachGoal', 'button'); return true;" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://neksov.github.io/ehya.github.io/" target="_blank"><img src="img/ehya.png"
+                        alt="site" class="swiper-slide__img"
+                        onclick="ym('62680024', 'reachGoal', 'button'); return true;" /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://neksov.github.io/TestFortune.github.io/" target="_blank"><img
+                        src="img/TestFortune.png" alt="site" class="swiper-slide__img"
+                        onclick="ym('62680024', 'reachGoal', 'button'); return true;" /></a>
+                  </div>
                   <div class="swiper-slide">
                     <a href="https://neksov.github.io/3DService.github.io/" target="_blank"><img
                         src="img/GloAcademy.png" alt="site" class="swiper-slide__img"
@@ -289,6 +327,15 @@
                   data-wow-delay="2.2s" />
               </div>
             </div>
+
+            <div class="certificate">
+              <a href="img/certJS.png" data-fancybox="gallery" data-caption="Сертификат Веб-Старт">
+                <img src="img/certJS.png" alt="Сертификат Веб-Старт">
+              </a>
+              <a href="img/certWeb.png" data-fancybox="gallery" data-caption="Сертификат JS">
+                <img src="img/certWeb.png" alt="Сертификат JS">
+              </a>
+            </div>
             <div class="request">
               <h3 class="request__name style-name">
                 Заявка
@@ -367,7 +414,7 @@
           <li>Адрес электронной почты</li>
           <li>Почтовый адрес</li>
         </ul>
-        <div class="consenr__text">
+        <div class="consent__text">
           Персональные данные Пользователей хранятся исключительно на
           электронных носителях и обрабатываются с использованием
           автоматизированных систем, за исключением случаев, когда
@@ -402,6 +449,7 @@
       </div>
     </div>
   </div>
+
   <div class="modalSend">
     <div class="modalSend__dialog">
       <button class="modalSend__close"></button>
@@ -418,14 +466,6 @@
       <img src="img/angle-up-solid.svg" alt="Наверх" />
     </span>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/buttonUp.min.js"></script>
 </body>
 
 </html>

@@ -864,6 +864,21 @@ input.invalid {
   .consent__list, .consent__text {
     font-size: 16px; }
 
+.certificate {
+  margin-top: 30px;
+  border-bottom: 1px solid #39383a;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .certificate img {
+    width: 200px;
+    height: 250px; }
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .container {
     width: 90%; } }
